@@ -163,8 +163,8 @@ namespace ProgressBarTest
         public void Lab_action()
         {
             //str = comboBox1.SelectedItem.ToString()+"----->"+ comboBox2.SelectedItem.ToString()+str;
-            this.label8.Text = "传输成功";
-            this.label8.Refresh();
+            //this.label8.Text = "传输成功";
+            //this.label8.Refresh();
             log = log + "传输成功-----------" + DateTime.Now.ToString("F") + "\r\n";
             MySleep(1000);
             this.label1.Text = null;

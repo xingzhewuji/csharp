@@ -43,11 +43,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(77, 38);
+            this.label1.Location = new System.Drawing.Point(18, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.Size = new System.Drawing.Size(101, 12);
             this.label1.TabIndex = 1;
-            this.label1.Text = "已完成：";
+            this.label1.Text = "文书下发已完成：";
             // 
             // label2
             // 

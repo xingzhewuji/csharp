@@ -29,7 +29,7 @@ namespace ProgressBarTest
                 if (this.progressBar1.Value +i <= progressBar1.Maximum)
                 {
                     this.progressBar1.Value += i;
-                    this.label2.Text = this.progressBar1.Value.ToString();
+                    this.label2.Text = this.progressBar1.Value.ToString()+"%";
 
                     return true;
                 }
