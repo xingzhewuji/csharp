@@ -26,14 +26,20 @@ namespace ProgressBarTest
         {
             Form3 f = new Form3();
             f.Show();
+            
 
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             Form2 f = new Form2();
+            f.FormClosing += Frm_FormClosing;//主窗体里订阅子窗体关闭事件
             f.Show();
+ 
+
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -63,6 +69,35 @@ namespace ProgressBarTest
         private void label7_Click_1(object sender, EventArgs e)
         {
             Form6 f = new Form6();
+            f.Show();
+        }
+        private void Frm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            int x = 12;
+            int y = 154;
+            label10.Text = "成功发送文书：1号文书---->1号人员";
+            label10.Location = new Point(x, y);
+            label11.Text = "时间：2019年7月15日 18:49";
+            label11.Location = new Point(x, y = y + 22);
+            label12.Text = "查看详情";
+            label12.Location = new Point(335,154);
+
+            label1.Location = new Point(x, y = y + 33);
+            label3.Location = new Point(x, y = y + 22);
+            label2.Location = new Point(335, 211);
+
+            label6.Location = new Point(x, y = y + 33);
+            label5.Location = new Point(x, y = y + 22);
+            label4.Location = new Point(335, 266);
+
+            label9.Location = new Point(x, y = y + 33);
+            label8.Location = new Point(x, y = y + 22);
+            label7.Location = new Point(335, 321);
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            Form7 f = new Form7();
             f.Show();
         }
     }
