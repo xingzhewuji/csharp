@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace ProgressBarTest
 {
-    public partial class Form6 : Form
+    public partial class mess5 : Form
     {
-        public Form6()
+        public mess5()
         {
             InitializeComponent();
         }

@@ -12,9 +12,9 @@ using System.Threading;
 
 namespace ProgressBarTest
 {
-    public partial class Form3 : Form
+    public partial class search : Form
     {
-        public Form3()
+        public search()
         {
             InitializeComponent();
         }
@@ -28,29 +28,29 @@ namespace ProgressBarTest
             label5.Text = "";
             
             label1.Text = "开始建立连接";
-            Form2.MySleep(2000);
+            send.MySleep(2000);
             label2.Text = "连接中.";
-            Form2.MySleep(500);
+            send.MySleep(500);
             label2.Text = "连接中..";
-            Form2.MySleep(500);
+            send.MySleep(500);
             label2.Text = "连接中...";
-            Form2.MySleep(500);
+            send.MySleep(500);
             label3.Text = "开始扫描";
-            Form2.MySleep(2000);
+            send.MySleep(2000);
             label4.Text = "扫描中.";
-            Form2.MySleep(2000);
+            send.MySleep(2000);
             label4.Text = "扫描中..";
-            Form2.MySleep(500);
+            send.MySleep(500);
             label4.Text = "扫描中...";
-            Form2.MySleep(500);
+            send.MySleep(500);
             label4.Text = "扫描中....";
-            Form2.MySleep(500);
+            send.MySleep(500);
             label4.Text = "扫描中.....";
-            Form2.MySleep(500);
+            send.MySleep(500);
             label4.Text = "扫描中......";
-            Form2.MySleep(500);
+            send.MySleep(500);
             label5.Text = "扫描结束";
-            Form2.MySleep(2000);
+            send.MySleep(2000);
 
             MessageBox.Show("尚未发现新文书");
         }

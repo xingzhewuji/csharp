@@ -10,9 +10,9 @@ using System.Threading;
 
 namespace ProgressBarTest
 {
-    public partial class Form1 : Form
+    public partial class wenshu : Form
     {
-        public Form1()
+        public wenshu()
         {
             InitializeComponent();
            // this.BackgroundImage = Image.FromFile(System.IO.Path.GetFullPath("back.png"));
@@ -25,7 +25,7 @@ namespace ProgressBarTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 f = new Form3();
+            search f = new search();
             f.Show();
             
 
@@ -35,7 +35,7 @@ namespace ProgressBarTest
         private void button2_Click(object sender, EventArgs e)
         {
 
-            Form2 f = new Form2();
+            send f = new send();
             f.FormClosing += Frm_FormClosing;//主窗体里订阅子窗体关闭事件
             f.Show();
  
@@ -45,7 +45,7 @@ namespace ProgressBarTest
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Form4 f = new Form4();
+            mess1 f = new mess1();
             f.Show();
         }
 
@@ -63,13 +63,13 @@ namespace ProgressBarTest
         **/
         private void label4_Click_1(object sender, EventArgs e)
         {
-            Form5 f = new Form5();
+            mess2 f = new mess2();
             f.Show();
         }
 
         private void label7_Click_1(object sender, EventArgs e)
         {
-            Form6 f = new Form6();
+            mess3 f = new mess3();
             f.Show();
         }
         private void Frm_FormClosing(object sender, FormClosingEventArgs e)
@@ -78,7 +78,7 @@ namespace ProgressBarTest
             int y = 154;
             label10.Text = "成功发送文书：1号文书---->1号人员";
             label10.Location = new Point(x, y);
-            label11.Text = "时间：2019年7月15日 18:49";
+            label11.Text = "时间："+DateTime.Now.ToString("F");
             label11.Location = new Point(x, y = y + 22);
             label12.Text = "查看详情";
             label12.Location = new Point(335,154);
@@ -98,7 +98,7 @@ namespace ProgressBarTest
 
         private void label12_Click(object sender, EventArgs e)
         {
-            Form7 f = new Form7();
+            mess4 f = new mess4();
             f.Show();
         }
 
@@ -106,7 +106,7 @@ namespace ProgressBarTest
         {
             timer1.Enabled = false;
             label13.Text = "";
-            timer1.Interval = 3000;
+            timer1.Interval = 10000;
             timer1.Enabled = true;
         }
 
@@ -118,7 +118,7 @@ namespace ProgressBarTest
 
         private void label13_Click(object sender, EventArgs e)
         {
-            Form8 f = new Form8();
+            mess5 f = new mess5();
             f.Show();
         }
     }

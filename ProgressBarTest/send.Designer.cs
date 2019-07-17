@@ -1,6 +1,6 @@
 ﻿namespace ProgressBarTest
 {
-    partial class Form2
+    partial class send
     {
         /// <summary>
         /// Required designer variable.
@@ -161,10 +161,11 @@
             this.label11.TabIndex = 13;
             this.label11.Text = "下发详情：";
             // 
-            // Form2
+            // send
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ProgressBarTest.Properties.Resources.back;
             this.ClientSize = new System.Drawing.Size(420, 493);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -180,7 +181,7 @@
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
-            this.Name = "Form2";
+            this.Name = "send";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
