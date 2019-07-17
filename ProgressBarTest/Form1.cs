@@ -15,8 +15,9 @@ namespace ProgressBarTest
         public Form1()
         {
             InitializeComponent();
+           // this.BackgroundImage = Image.FromFile(System.IO.Path.GetFullPath("back.png"));
             //string[] log_mess = new[] { "1号文书", "2号人员", "3号人员", "4号人员", "5号人员", "6号人员" };
-            
+            Changelabel();
         }
 
         
@@ -98,6 +99,26 @@ namespace ProgressBarTest
         private void label12_Click(object sender, EventArgs e)
         {
             Form7 f = new Form7();
+            f.Show();
+        }
+
+        private void Changelabel()
+        {
+            timer1.Enabled = false;
+            label13.Text = "";
+            timer1.Interval = 3000;
+            timer1.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+            label13.Text = "收到新文书，清查看";
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            Form8 f = new Form8();
             f.Show();
         }
     }

@@ -37,7 +37,7 @@ namespace ProgressBarTest
         private string mess;
         public string log;
         [System.Runtime.InteropServices.DllImport("kernel32.dll")]
-        static extern uint GetTickCount();
+        public static extern uint GetTickCount();
 
         private void ShowPB()
         {
@@ -183,7 +183,7 @@ namespace ProgressBarTest
             //this.label1.ForeColor = Color.Red;
             //labResult.Refresh();
         }
-        static void MySleep(uint ms)
+        public static void MySleep(uint ms)
         {
             uint start = GetTickCount();
             while (GetTickCount() - start < ms)
