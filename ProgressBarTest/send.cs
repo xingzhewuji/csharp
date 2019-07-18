@@ -36,6 +36,7 @@ namespace ProgressBarTest
         //private string[] dir_person=new string[4];
         private string mess;
         public string log;
+        public string result;
         [System.Runtime.InteropServices.DllImport("kernel32.dll")]
         public static extern uint GetTickCount();
 
@@ -67,9 +68,20 @@ namespace ProgressBarTest
         {
             mess = null;
             if (comboBox1.SelectedItem == null)
-                MessageBox.Show("请选择文书类型");
+            //MessageBox.Show("请选择文书类型");
+            {
+                textBox1.Text = "请选择文书类型";
+                button5.Visible = true;
+                textBox1.Visible = true;
+            }
             else if (Sele())
-                MessageBox.Show("请选择接受人员");
+            {
+                //MessageBox.Show("请选择接受人员");
+                textBox1.Text = "请选择接受人员";
+                button5.Visible = true;
+                textBox1.Visible = true;
+
+            }
             else
             {
                 for (int i = 0; i < checkedListBox1.Items.Count; i++)
@@ -79,8 +91,14 @@ namespace ProgressBarTest
                         mess = mess + comboBox1.SelectedItem.ToString() + "----->" + checkedListBox1.GetItemText(checkedListBox1.Items[i]) + "\r\n";
                     }
                 }
-                DialogResult result = MessageBox.Show(mess, "提示", MessageBoxButtons.OKCancel);
-                if (result == DialogResult.OK)
+                //DialogResult result = MessageBox.Show(mess, "提示", MessageBoxButtons.OKCancel);
+                textBox1.Text = mess;
+                button3.Visible = true;
+                button4.Visible = true;
+                textBox1.Visible = true;
+                //while (result == "") { }
+                /*
+                if (result == "yes")
                 {
                     //lab_action a = new lab_action(Lab_action);
                     //Invoke(a);
@@ -90,9 +108,11 @@ namespace ProgressBarTest
                     th.Start();
 
                     Lab_action();
-                    MessageBox.Show("文件下发成功");
-
-                }
+                    //MessageBox.Show("文件下发成功");
+                    textBox1.Text = "文件下发成功";
+                    button5.Visible = true;
+                    textBox1.Visible = true;
+                }*/
             }
         }
         public bool Sele()
@@ -195,6 +215,42 @@ namespace ProgressBarTest
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            button3.Visible = false;
+            button4.Visible = false;
+            textBox1.Visible = false;
+            result = "yes";
+            //lab_action a = new lab_action(Lab_action);
+            //Invoke(a);
+            SetLabel();
+            this.BeginInvoke(new MethodInvoker(ShowPB));
+            Thread th = new Thread(new ThreadStart(ThreadFun));
+            th.Start();
+
+            Lab_action();
+            //MessageBox.Show("文件下发成功");
+            textBox1.Text = "文件下发成功";
+            button5.Visible = true;
+            textBox1.Visible = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            result = "no";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            button5.Visible = false;
+            textBox1.Visible = false;
         }
     }
 

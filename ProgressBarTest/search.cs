@@ -52,7 +52,21 @@ namespace ProgressBarTest
             label5.Text = "扫描结束";
             send.MySleep(2000);
 
-            MessageBox.Show("尚未发现新文书");
+            //MessageBox.Show("尚未发现新文书");
+            textBox1.Text = "尚未发现新文书";
+            textBox1.Visible = true;
+            button3.Visible = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Visible =false;
+            button3.Visible = false;
         }
     }
 

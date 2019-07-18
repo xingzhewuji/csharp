@@ -86,11 +86,11 @@
     <Compile Include="mess4.Designer.cs">
       <DependentUpon>mess4.cs</DependentUpon>
     </Compile>
-    <Compile Include="mess5.cs">
+    <Compile Include="mess_rec.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mess5.Designer.cs">
-      <DependentUpon>mess5.cs</DependentUpon>
+    <Compile Include="mess_rec.Designer.cs">
+      <DependentUpon>mess_rec.cs</DependentUpon>
     </Compile>
     <Compile Include="ProBar.cs">
       <SubType>Form</SubType>
@@ -121,8 +121,8 @@
     <EmbeddedResource Include="mess4.resx">
       <DependentUpon>mess4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mess5.resx">
-      <DependentUpon>mess5.cs</DependentUpon>
+    <EmbeddedResource Include="mess_rec.resx">
+      <DependentUpon>mess_rec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProBar.resx">
       <DependentUpon>ProBar.cs</DependentUpon>
