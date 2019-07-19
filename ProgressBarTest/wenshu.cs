@@ -79,7 +79,7 @@ namespace ProgressBarTest
 
         private void label2_Click(object sender, EventArgs e)
         {
-            mess1 f1 = new mess1();
+            child_mess f1 = new child_mess("文书标题：4号文书");
             f1.TopLevel = false;
             f1.Dock = DockStyle.Fill;
             f1.Parent = this.panel1;
@@ -106,7 +106,7 @@ namespace ProgressBarTest
         **/
         private void label4_Click(object sender, EventArgs e)
         {
-            mess2 f2 = new mess2();
+            child_mess f2 = new child_mess("文书标题：3号文书");
             f2.TopLevel = false;
             f2.Dock = DockStyle.Fill;
             f2.Parent = this.panel1;
@@ -121,7 +121,7 @@ namespace ProgressBarTest
 
         private void label7_Click(object sender, EventArgs e)
         {
-            mess3 f3 = new mess3();
+            child_mess f3 = new child_mess("文书标题：1号文书");
             f3.TopLevel = false;
             f3.Dock = DockStyle.Fill;
             f3.Parent = this.panel1;
@@ -141,7 +141,7 @@ namespace ProgressBarTest
 
         private void label12_Click(object sender, EventArgs e)
         {
-            mess4 f4 = new mess4();
+            child_mess f4 = new child_mess("文书标题：1号文书");
             f4.TopLevel = false;
             f4.Dock = DockStyle.Fill;
             f4.Parent = this.panel1;
@@ -165,12 +165,12 @@ namespace ProgressBarTest
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Enabled = false;
-            label13.Text = "收到新文书，清查看";
+            label13.Text = "收到新文书，请查看";
         }
 
         private void label13_Click(object sender, EventArgs e)
         {
-            mess_rec f5 = new mess_rec();
+            child_mess f5 = new child_mess("文书标题：1号文书");
             f5.TopLevel = false;
             f5.Dock = DockStyle.Fill;
             f5.Parent = this.panel1;
@@ -226,7 +226,7 @@ namespace ProgressBarTest
 
         private void label16_Click(object sender, EventArgs e)
         {
-            mess_rec f5 = new mess_rec();
+            child_mess f5 = new child_mess("文书标题：3号文书");
             f5.TopLevel = false;
             f5.Dock = DockStyle.Fill;
             f5.Parent = this.panel1;
@@ -238,6 +238,8 @@ namespace ProgressBarTest
         {
             this.panel1.Visible = false;
         }
+
+
 
     }
 }

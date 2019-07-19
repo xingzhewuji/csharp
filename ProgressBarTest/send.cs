@@ -70,16 +70,16 @@ namespace ProgressBarTest
             if (comboBox1.SelectedItem == null)
             //MessageBox.Show("请选择文书类型");
             {
-                textBox1.Text = "请选择文书类型";
+                label12.Text = "请选择文书类型";
                 button5.Visible = true;
-                textBox1.Visible = true;
+                label12.Visible = true;
             }
             else if (Sele())
             {
                 //MessageBox.Show("请选择接受人员");
-                textBox1.Text = "请选择接受人员";
+                label12.Text = "请选择接受人员";
                 button5.Visible = true;
-                textBox1.Visible = true;
+                label12.Visible = true;
 
             }
             else
@@ -92,10 +92,10 @@ namespace ProgressBarTest
                     }
                 }
                 //DialogResult result = MessageBox.Show(mess, "提示", MessageBoxButtons.OKCancel);
-                textBox1.Text = mess;
+                label12.Text = mess;
                 button3.Visible = true;
                 button4.Visible = true;
-                textBox1.Visible = true;
+                label12.Visible = true;
                 //while (result == "") { }
                 /*
                 if (result == "yes")
@@ -226,7 +226,7 @@ namespace ProgressBarTest
         {
             button3.Visible = false;
             button4.Visible = false;
-            textBox1.Visible = false;
+            label12.Visible = false;
             result = "yes";
             //lab_action a = new lab_action(Lab_action);
             //Invoke(a);
@@ -237,9 +237,9 @@ namespace ProgressBarTest
 
             Lab_action();
             //MessageBox.Show("文件下发成功");
-            textBox1.Text = "文件下发成功";
+            label12.Text = "文件下发成功";
             button5.Visible = true;
-            textBox1.Visible = true;
+            label12.Visible = true;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -250,7 +250,7 @@ namespace ProgressBarTest
         private void button5_Click(object sender, EventArgs e)
         {
             button5.Visible = false;
-            textBox1.Visible = false;
+            label12.Visible = false;
         }
     }
 

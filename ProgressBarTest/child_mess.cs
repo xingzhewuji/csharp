@@ -9,13 +9,17 @@ using System.Windows.Forms;
 
 namespace ProgressBarTest
 {
-    public partial class mess1 : Form
+    public partial class child_mess : Form
     {
-        public mess1()
+        public child_mess()
         {
             InitializeComponent();
         }
-
+        public child_mess(string str)
+        {
+            InitializeComponent();
+            label1.Text = str;//这句必须放在InitializeComponent();的后面，否则会引起“空引用异常”
+        }
         private void Form4_Load(object sender, EventArgs e)
         {
 

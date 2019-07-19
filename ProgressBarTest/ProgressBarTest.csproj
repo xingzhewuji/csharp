@@ -62,35 +62,11 @@
     <Compile Include="search.Designer.cs">
       <DependentUpon>search.cs</DependentUpon>
     </Compile>
-    <Compile Include="mess1.cs">
+    <Compile Include="child_mess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mess1.Designer.cs">
-      <DependentUpon>mess1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="mess2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="mess2.Designer.cs">
-      <DependentUpon>mess2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="mess3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="mess3.Designer.cs">
-      <DependentUpon>mess3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="mess4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="mess4.Designer.cs">
-      <DependentUpon>mess4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="mess_rec.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="mess_rec.Designer.cs">
-      <DependentUpon>mess_rec.cs</DependentUpon>
+    <Compile Include="child_mess.Designer.cs">
+      <DependentUpon>child_mess.cs</DependentUpon>
     </Compile>
     <Compile Include="ProBar.cs">
       <SubType>Form</SubType>
@@ -109,20 +85,8 @@
     <EmbeddedResource Include="search.resx">
       <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mess1.resx">
-      <DependentUpon>mess1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mess2.resx">
-      <DependentUpon>mess2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mess3.resx">
-      <DependentUpon>mess3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mess4.resx">
-      <DependentUpon>mess4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mess_rec.resx">
-      <DependentUpon>mess_rec.cs</DependentUpon>
+    <EmbeddedResource Include="child_mess.resx">
+      <DependentUpon>child_mess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProBar.resx">
       <DependentUpon>ProBar.cs</DependentUpon>
