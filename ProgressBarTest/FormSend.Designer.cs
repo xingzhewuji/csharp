@@ -1,6 +1,6 @@
 ﻿namespace ProgressBarTest
 {
-    partial class send
+    partial class FormSend
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.sendlab = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -139,14 +139,14 @@
             this.label8.Size = new System.Drawing.Size(0, 12);
             this.label8.TabIndex = 10;
             // 
-            // label9
+            // sendlab
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(25, 109);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 12);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "选择文书类型";
+            this.sendlab.AutoSize = true;
+            this.sendlab.Location = new System.Drawing.Point(25, 109);
+            this.sendlab.Name = "sendlab";
+            this.sendlab.Size = new System.Drawing.Size(77, 12);
+            this.sendlab.TabIndex = 11;
+            this.sendlab.Text = "选择文书类型";
             // 
             // label10
             // 
@@ -218,7 +218,7 @@
             this.label12.Size = new System.Drawing.Size(0, 24);
             this.label12.TabIndex = 19;
             // 
-            // send
+            // FormSend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -231,7 +231,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.sendlab);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -244,7 +244,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "send";
+            this.Name = "FormSend";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -266,7 +266,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label sendlab;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button2;

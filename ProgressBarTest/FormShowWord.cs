@@ -10,18 +10,25 @@ using Word = Microsoft.Office.Interop.Word;
 
 namespace ProgressBarTest
 {
-    public partial class word_test : Form
+    public partial class FormShowWord : Form
     {
-        public word_test()
+        public string fullPath;
+        public FormShowWord()
         {
             InitializeComponent();
+        }
+        public FormShowWord(string str)
+        {
+            InitializeComponent();
+            string fullPath = AppDomain.CurrentDomain.BaseDirectory + str;
+            OpenWord(fullPath);
         }
 
         private void word_test_Load(object sender, EventArgs e)
         {
-            string fullPath = AppDomain.CurrentDomain.BaseDirectory + @"word\web.docx";
             
-            OpenWord(fullPath);
+            
+           
         }
         public void OpenWord(string fileName)
         {

@@ -10,9 +10,9 @@ using System.Threading;
 
 namespace ProgressBarTest
 {
-    public partial class send : Form
+    public partial class FormSend : Form
     {
-        public send()
+        public FormSend()
         {
             InitializeComponent();
             string[] word_process = new[] { "1号文书", "2号文书", "3号文书" };

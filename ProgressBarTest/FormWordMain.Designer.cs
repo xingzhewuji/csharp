@@ -1,6 +1,6 @@
 ﻿namespace ProgressBarTest
 {
-    partial class wenshu
+    partial class FormWordMain
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(wenshu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormWordMain));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -88,7 +88,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(203, 12);
             this.label1.TabIndex = 3;
-            this.label1.Text = "成功发送文书：1号文书---->1号人员";
+            this.label1.Text = "成功发送文书：4号文书---->2号人员";
             // 
             // label3
             // 
@@ -103,6 +103,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -115,6 +116,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -145,10 +147,11 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(257, 12);
             this.label6.TabIndex = 7;
-            this.label6.Text = "成功发送文书：1号文书---->1号人员、3号人员";
+            this.label6.Text = "成功发送文书：1号文书---->2号人员、3号人员";
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -203,6 +206,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label12.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -250,6 +254,7 @@
             // 
             // label16
             // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label16.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -261,13 +266,13 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(521, 661);
+            this.panel1.Size = new System.Drawing.Size(521, 739);
             this.panel1.TabIndex = 21;
             this.panel1.Visible = false;
             // 
-            // wenshu
+            // FormWordMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -292,7 +297,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "wenshu";
+            this.Name = "FormWordMain";
             this.Text = "进度条测试";
             this.Load += new System.EventHandler(this.wenshu_Load);
             this.ResumeLayout(false);

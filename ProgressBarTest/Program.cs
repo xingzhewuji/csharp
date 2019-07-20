@@ -15,7 +15,7 @@ namespace ProgressBarTest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new wenshu());
+            Application.Run(new FormWordMain());
         }
     }
 }

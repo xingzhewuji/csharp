@@ -10,16 +10,19 @@ using Word = Microsoft.Office.Interop.Word;
 
 namespace ProgressBarTest
 {
-    public partial class child_mess : Form
+    public partial class FormMess : Form
     {
-        public child_mess()
+        public FormMess()
         {
             InitializeComponent();
         }
-        public child_mess(string str)
+        public FormMess(string mess_title,string mess_send_location,string mess_rec_location,string mess_rec_time )
         {
             InitializeComponent();
-            label1.Text = str;//这句必须放在InitializeComponent();的后面，否则会引起“空引用异常”
+            label1.Text = mess_title;//这句必须放在InitializeComponent();的后面，否则会引起“空引用异常”
+            label2.Text = mess_send_location;
+            label3.Text = mess_rec_location;
+            label4.Text = mess_rec_time;
         }
         private void Form4_Load(object sender, EventArgs e)
         {
@@ -58,7 +61,7 @@ namespace ProgressBarTest
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            word_test f = new word_test();
+            FormShowWord f = new FormShowWord("word\\web.docx");
             f.TopLevel = false;
             f.Dock = DockStyle.Fill;
             f.Parent = this.panel1;
@@ -73,7 +76,7 @@ namespace ProgressBarTest
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            word_test f = new word_test();
+            FormShowWord f = new FormShowWord("word\\web2.docx");
             f.TopLevel = false;
             f.Dock = DockStyle.Fill;
             f.Parent = this.panel1;

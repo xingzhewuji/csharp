@@ -10,9 +10,9 @@ using System.Threading;
 
 namespace ProgressBarTest
 {
-    public partial class wenshu : Form
+    public partial class FormWordMain : Form
     {
-        public wenshu()
+        public FormWordMain()
         {
             InitializeComponent();
            // this.BackgroundImage = Image.FromFile(System.IO.Path.GetFullPath("back.png"));
@@ -21,10 +21,11 @@ namespace ProgressBarTest
         }
 
         public string date_send;
-        
+        public string date_rec;
+
         private void button1_Click(object sender, EventArgs e)
         {
-            search b1 = new search();
+            FormSearch b1 = new FormSearch();
             b1.TopLevel = false;
             b1.Dock = DockStyle.Fill;
             b1.Parent = this.panel1;
@@ -42,7 +43,7 @@ namespace ProgressBarTest
         private void button2_Click(object sender, EventArgs e)
         {
 
-            send b2 = new send();
+            FormSend b2 = new FormSend();
             b2.TopLevel = false;
             b2.Dock = DockStyle.Fill;
             b2.Parent = this.panel1;
@@ -54,7 +55,7 @@ namespace ProgressBarTest
         {
             int x = 12;
             int y = 154;
-            label10.Text = "成功发送文书：1号文书---->1号人员";
+            label10.Text = "成功发送文书：2号文书---->4号人员";
             label10.Location = new Point(x, y);
             date_send = DateTime.Now.ToString("F");
             label11.Text = "时间：" + date_send;
@@ -79,7 +80,7 @@ namespace ProgressBarTest
 
         private void label2_Click(object sender, EventArgs e)
         {
-            child_mess f1 = new child_mess("文书标题：4号文书");
+            FormMess f1 = new FormMess("文书标题：4号文书","下发单位:1号人员","接收单位:2号人员", "时间：2019年7月14日 18:49:02");
             f1.TopLevel = false;
             f1.Dock = DockStyle.Fill;
             f1.Parent = this.panel1;
@@ -106,7 +107,7 @@ namespace ProgressBarTest
         **/
         private void label4_Click(object sender, EventArgs e)
         {
-            child_mess f2 = new child_mess("文书标题：3号文书");
+            FormMess f2 = new FormMess("文书标题：1号文书", "下发单位:1号人员", "接收单位:2号人员，3号人员", "时间：2019年7月14日 17:29:16");
             f2.TopLevel = false;
             f2.Dock = DockStyle.Fill;
             f2.Parent = this.panel1;
@@ -121,7 +122,7 @@ namespace ProgressBarTest
 
         private void label7_Click(object sender, EventArgs e)
         {
-            child_mess f3 = new child_mess("文书标题：1号文书");
+            FormMess f3 = new FormMess("文书标题：2号文书", "下发单位:3号人员", "接收单位:1号人员", "时间：2019年7月14日 14:29:26");
             f3.TopLevel = false;
             f3.Dock = DockStyle.Fill;
             f3.Parent = this.panel1;
@@ -141,7 +142,7 @@ namespace ProgressBarTest
 
         private void label12_Click(object sender, EventArgs e)
         {
-            child_mess f4 = new child_mess("文书标题：1号文书");
+            FormMess f4 = new FormMess("文书标题：2号文书", "下发单位:1号人员", "接收单位:4号人员", "时间"+date_send);
             f4.TopLevel = false;
             f4.Dock = DockStyle.Fill;
             f4.Parent = this.panel1;
@@ -166,11 +167,12 @@ namespace ProgressBarTest
         {
             timer1.Enabled = false;
             label13.Text = "收到新文书，请查看";
+            date_rec = DateTime.Now.ToString("F");
         }
 
         private void label13_Click(object sender, EventArgs e)
         {
-            child_mess f5 = new child_mess("文书标题：1号文书");
+            FormMess f5 = new FormMess("文书标题：2号文书", "下发单位:1号人员", "接收单位:3号人员", "时间:"+ date_rec);
             f5.TopLevel = false;
             f5.Dock = DockStyle.Fill;
             f5.Parent = this.panel1;
@@ -190,14 +192,14 @@ namespace ProgressBarTest
             label14.Text = "成功接收文书：2号文书---->3号人员";
             label14.Location = new Point(x, 154);
 
-            label15.Text = "时间：" + DateTime.Now.ToString("F");
+            label15.Text = "时间：" + date_rec;
             label15.Location = new Point(x, 154 + 22);
             label16.Text = "查看详情";
             label16.Location = new Point(335,154);
 
 
 
-            label10.Text = "成功发送文书：1号文书---->1号人员";
+            label10.Text = "成功发送文书：2号文书---->4号人员";
             label10.Location = new Point(x, y);
             
             label11.Text = "时间：" + date_send;
@@ -226,7 +228,7 @@ namespace ProgressBarTest
 
         private void label16_Click(object sender, EventArgs e)
         {
-            child_mess f5 = new child_mess("文书标题：3号文书");
+            FormMess f5 = new FormMess("文书标题：4号文书", "下发单位:1号人员", "接收单位:3号人员", "时间:2019年7月11号 19:10:20");
             f5.TopLevel = false;
             f5.Dock = DockStyle.Fill;
             f5.Parent = this.panel1;

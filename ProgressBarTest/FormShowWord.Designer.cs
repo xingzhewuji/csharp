@@ -1,6 +1,6 @@
 ﻿namespace ProgressBarTest
 {
-    partial class word_test
+    partial class FormShowWord
     {
         /// <summary>
         /// Required designer variable.
@@ -36,7 +36,7 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(2, 1);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(440, 610);
+            this.richTextBox1.Size = new System.Drawing.Size(506, 610);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -50,15 +50,15 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // word_test
+            // FormShowWord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 671);
+            this.ClientSize = new System.Drawing.Size(540, 780);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "word_test";
+            this.Name = "FormShowWord";
             this.Text = "word_test";
             this.Load += new System.EventHandler(this.word_test_Load);
             this.ResumeLayout(false);
