@@ -53,8 +53,8 @@ namespace ProgressBarTest
             send.MySleep(2000);
 
             //MessageBox.Show("尚未发现新文书");
-            textBox1.Text = "尚未发现新文书";
-            textBox1.Visible = true;
+            label6.Text = "尚未发现新文书";
+            label6.Visible = true;
             button3.Visible = true;
         }
 
@@ -65,7 +65,7 @@ namespace ProgressBarTest
 
         private void button3_Click(object sender, EventArgs e)
         {
-            textBox1.Visible =false;
+            label6.Visible =false;
             button3.Visible = false;
         }
     }

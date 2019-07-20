@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace ProgressBarTest
 {
@@ -49,5 +50,42 @@ namespace ProgressBarTest
         {
             this.Close();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            word_test f = new word_test();
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            f.Parent = this.panel1;
+            f.Show();
+            this.panel1.Visible = true;
+            f.FormClosing += Frm_FormClosing1;//主窗体里订阅子窗体关闭事件
+        }
+        private void Frm_FormClosing1(object sender, FormClosingEventArgs e)
+        {
+            this.panel1.Visible = false;
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            word_test f = new word_test();
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            f.Parent = this.panel1;
+            f.Show();
+            this.panel1.Visible = true;
+            f.FormClosing += Frm_FormClosing2;//主窗体里订阅子窗体关闭事件
+        }
+        private void Frm_FormClosing2(object sender, FormClosingEventArgs e)
+        {
+            this.panel1.Visible = false;
+        }
+
+
     }
 }
