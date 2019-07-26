@@ -168,7 +168,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(320, 580);
+            this.button2.Location = new System.Drawing.Point(400, 353);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 14;
@@ -178,7 +178,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(230, 385);
+            this.button3.Location = new System.Drawing.Point(229, 321);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 16;
@@ -189,7 +189,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(329, 385);
+            this.button4.Location = new System.Drawing.Point(328, 321);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 17;
@@ -200,7 +200,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(267, 385);
+            this.button5.Location = new System.Drawing.Point(266, 321);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 18;
@@ -213,7 +213,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.Location = new System.Drawing.Point(219, 332);
+            this.label12.Location = new System.Drawing.Point(218, 268);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(0, 24);
             this.label12.TabIndex = 19;
@@ -222,8 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ProgressBarTest.Properties.Resources.back;
-            this.ClientSize = new System.Drawing.Size(478, 683);
+            this.ClientSize = new System.Drawing.Size(478, 400);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);

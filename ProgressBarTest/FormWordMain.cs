@@ -18,6 +18,22 @@ namespace ProgressBarTest
            // this.BackgroundImage = Image.FromFile(System.IO.Path.GetFullPath("back.png"));
             //string[] log_mess = new[] { "1号文书", "2号人员", "3号人员", "4号人员", "5号人员", "6号人员" };
             Changelabel();
+            int x = 12;
+            int y = 450;
+            int x1 = 800;
+            int y1 = 450;
+            label1.Location = new Point(x, y);
+            label3.Location = new Point(x+500, y );
+            label2.Location = new Point(x1, y1);
+
+            label6.Location = new Point(x, y = y + 33);
+            label5.Location = new Point(x+500, y);
+            label4.Location = new Point(x1, y1=y1+33);
+
+            label9.Location = new Point(x, y = y + 33);
+            label8.Location = new Point(x+500, y );
+            label7.Location = new Point(x1, y1=y1+33);
+
         }
 
         public string date_send;
@@ -25,7 +41,7 @@ namespace ProgressBarTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormSearch b1 = new FormSearch();
+            FormSearch b1 = new FormSearch(date_rec);
             b1.TopLevel = false;
             b1.Dock = DockStyle.Fill;
             b1.Parent = this.panel1;
@@ -54,26 +70,28 @@ namespace ProgressBarTest
         private void Frm_FormClosingb2(object sender, FormClosingEventArgs e)
         {
             int x = 12;
-            int y = 154;
+            int y = 450;
+            int x1 = 800;
+            int y1 = 450;
             label10.Text = "成功发送文书：2号文书---->4号人员";
             label10.Location = new Point(x, y);
             date_send = DateTime.Now.ToString("F");
             label11.Text = "时间：" + date_send;
-            label11.Location = new Point(x, y = y + 22);
+            label11.Location = new Point(x + 500, y );
             label12.Text = "查看详情";
-            label12.Location = new Point(335, 154);
+            label12.Location = new Point(x1, y1);
 
-            label1.Location = new Point(x, y = y + 33);
-            label3.Location = new Point(x, y = y + 22);
-            label2.Location = new Point(335, 211);
+            label1.Location = new Point(x, y=y+33);
+            label3.Location = new Point(x + 500, y);
+            label2.Location = new Point(x1, y1=y1+33);
 
             label6.Location = new Point(x, y = y + 33);
-            label5.Location = new Point(x, y = y + 22);
-            label4.Location = new Point(335, 266);
+            label5.Location = new Point(x + 500, y);
+            label4.Location = new Point(x1, y1 = y1 + 33);
 
             label9.Location = new Point(x, y = y + 33);
-            label8.Location = new Point(x, y = y + 22);
-            label7.Location = new Point(335, 321);
+            label8.Location = new Point(x + 500, y);
+            label7.Location = new Point(x1, y1 = y1 + 33);
             this.panel1.Visible = false;
         }
 
@@ -172,7 +190,7 @@ namespace ProgressBarTest
 
         private void label13_Click(object sender, EventArgs e)
         {
-            FormMess f5 = new FormMess("文书标题：2号文书", "下发单位:1号人员", "接收单位:3号人员", "时间:"+ date_rec);
+            FormMess f5 = new FormMess("文书标题：2号文书", "下发单位:3号人员", "接收单位:1号人员", "时间:"+ date_rec);
             f5.TopLevel = false;
             f5.Dock = DockStyle.Fill;
             f5.Parent = this.panel1;
@@ -186,39 +204,39 @@ namespace ProgressBarTest
             label13.Text = "";
 
             int x = 12;
-            int y = 154+55;
+            int y = 450;
+            int x1 = 800;
+            int y1 = 450;
 
-
-            label14.Text = "成功接收文书：2号文书---->3号人员";
-            label14.Location = new Point(x, 154);
+            label14.Text = "成功接收文书：2号文书---->1号人员";
+            label14.Location = new Point(x, y);
 
             label15.Text = "时间：" + date_rec;
-            label15.Location = new Point(x, 154 + 22);
+            label15.Location = new Point(x+500, y);
             label16.Text = "查看详情";
-            label16.Location = new Point(335,154);
+            label16.Location = new Point(x1,y1);
 
 
 
             label10.Text = "成功发送文书：2号文书---->4号人员";
-            label10.Location = new Point(x, y);
+            label10.Location = new Point(x, y=y+33);
             
             label11.Text = "时间：" + date_send;
-            label11.Location = new Point(x, y = y + 22);
+            label11.Location = new Point(x+500, y );
             label12.Text = "查看详情";
-            label12.Location = new Point(335, 211);
+            label12.Location = new Point(x1, y1=y1+33);
 
             label1.Location = new Point(x, y = y + 33);
-            label3.Location = new Point(x, y = y + 22);
-            label2.Location = new Point(335, 266);
+            label3.Location = new Point(x + 500, y);
+            label2.Location = new Point(x1, y1=y1 + 33);
 
             label6.Location = new Point(x, y = y + 33);
-            label5.Location = new Point(x, y = y + 22);
-            label4.Location = new Point(335, 321);
+            label5.Location = new Point(x + 500, y);
+            label4.Location = new Point(x1, y1 = y1 + 33);
 
             label9.Location = new Point(x, y = y + 33);
-            label8.Location = new Point(x, y = y + 22);
-            label7.Location = new Point(335, 376);
-
+            label8.Location = new Point(x + 500, y);
+            label7.Location = new Point(x1, y1 = y1 + 33);
         }
 
         private void wenshu_Load(object sender, EventArgs e)
@@ -228,7 +246,7 @@ namespace ProgressBarTest
 
         private void label16_Click(object sender, EventArgs e)
         {
-            FormMess f5 = new FormMess("文书标题：4号文书", "下发单位:1号人员", "接收单位:3号人员", "时间:2019年7月11号 19:10:20");
+            FormMess f5 = new FormMess("文书标题：2号文书", "下发单位:3号人员", "接收单位:1号人员", "时间:" + date_rec);
             f5.TopLevel = false;
             f5.Dock = DockStyle.Fill;
             f5.Parent = this.panel1;
@@ -242,6 +260,17 @@ namespace ProgressBarTest
         }
 
 
-
+        private void FormWordMain_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics GPS = this.CreateGraphics();
+            Pen MyPen1 = new Pen(Color.Black, 2f);
+            GPS.DrawLine(MyPen1, 0, 1, 1000, 1);
+            GPS.DrawLine(MyPen1, 1, 0, 1, 700);
+            GPS.DrawLine(MyPen1, 1, 700, 1000, 700);
+            GPS.DrawLine(MyPen1, 1000, 1, 1000, 700);
+            GPS.DrawLine(MyPen1, 0, 200, 500, 200);
+            GPS.DrawLine(MyPen1, 0, 400, 1000, 400);
+            GPS.DrawLine(MyPen1, 500, 0, 500, 400);
+        }
     }
 }
